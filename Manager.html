@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Task Manager v2.0</title>
+    <link href="TaskManager.css" rel="stylesheet" />
+    <link href="jquery-ui.min.css" rel="stylesheet" />
+    <link href="jquery-ui.theme.min.css" rel="stylesheet" />
+    <script src="jquery-3.0.0.min.js" type="text/javascript"></script>
+    <script src="jquery-ui.min.js" type="text/javascript"></script>
+    <script src="init.js" type="text/javascript"></script>
+    <script src="TaskManager.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="heading">
+        <div class="title">
+            <h1>Task Tracker</h1>
+        </div>
+        <div class="version">
+            v2.0
+        </div>
+    </div>
+
+    <div>
+        <table class="content">
+            <tr>
+                <td class="create-task">
+                    <div class="section">Create a Task</div>
+                    <div class="values">
+                        <div>
+                            Task Name<br/>
+                            <input type="textbox" id="TaskName" placeholder="Task name" />
+                        </div>
+                        <div>
+                            Date<br />
+                            <input type="textbox" id="TaskDate" placeholder="Date" />
+                        </div>
+                        <div>
+                            Assigned To<br />
+                            <input type="textbox" id="TaskAssignedTo" placeholder="Assigned to" />
+                        </div>
+                        <div>
+                            <input type="button" class="create-button" value="Submit" id="CreateNewTask" />
+                        </div>
+                    </div>
+                </td>
+                <td class="separator"></td>
+                <td class="existing-tasks">
+                    <div class="section">Existing Tasks</div>
+                    <div>
+                        <ul id="TaskList" class="task-list">
+                            
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>   
+
+    
+    <script type="text/javascript">
+        $(function () {
+            $("#TaskDate").datepicker({
+                dateFormat: "dd/mm/yy"
+            });        
+        });
+    </script>
+</body>
+
+
+
+</html>

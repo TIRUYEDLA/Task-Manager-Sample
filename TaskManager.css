@@ -1,0 +1,106 @@
+body{
+    background-color: rgba(211, 211, 211, 0.36);
+}
+
+.heading{
+    padding : 40px 20px;
+    font-family :sans-serif;
+}
+
+.heading .title h1{
+    margin-bottom : 0;    
+}
+
+.heading .version{
+    color : grey;
+    font-weight :bold;
+}
+
+.content{
+    width: 100%;
+    font-weight : bold;
+}
+
+.content > tbody > tr > td{
+    background-color: white;
+    padding-left : 20px;
+    padding-right : 20px;
+    vertical-align : top;
+}
+
+.content > tbody > tr > td.separator{
+    background : transparent;
+    padding : 0;
+}
+
+.section{
+    padding : 30px 20px 30px 0px;
+    font-size : 18px;
+}
+
+.create-task .values div{
+    margin-bottom: 30px;
+    font-family : sans-serif;
+    font-size : 12px;
+}
+
+.create-task .values div input{
+    padding : 4px;
+    border-radius : 2px;
+    border : 1px solid rgba(169, 169, 169, 0.36);
+    background-color : rgba(211, 211, 211, 0.36);
+    font-weight : normal;
+    height: 22px;
+    margin-top: 3px;
+    width: 85%;
+}
+
+.create-task .values div input.create-button{
+    padding : 8px;
+    border-radius : 2px;
+    border : 1px solid rgba(169, 169, 169, 0.36);
+    background-color : grey;
+    color : white;
+    font-size : 18px;
+    font-family : 'Times New Roman';
+    height: inherit;
+    width: inherit;
+    cursor : pointer;
+}
+
+.task-list{
+    padding-left : 0;
+    list-style-type : none;
+    border-radius : 2px;
+    border: 4px solid rgba(162, 162, 162, 0.36);
+}
+
+.task-list li {
+    padding : 10px;
+    height : 20px;
+    margin-left : 2px;
+    margin-right: 2px;
+}
+
+.task-list li:nth-child(even) {
+    background-color: rgba(211, 211, 211, 0.36);
+}
+
+.task-list li span.task-name{
+    font-size: 14px;
+    float : left;
+    width : 50%;
+}
+
+.task-list li span.date {
+    font-size: 12px;
+    color: grey;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.task-list li span.name{
+    float : right;
+    font-family: sans-serif;
+    font-size: 12px;
+}
